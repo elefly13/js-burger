@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* common */
+body {
+    background-color: rgb(255, 244, 226);
+}
+.wrapper {
+    width: 50vw;
+    height: 100vh;
+    background-color: white;
+    margin: 0 auto;
+    
+}
+main {
+    position: relative;
+    width: 100%;
+    height: 85vh;
+}
+/* /common */
+/* sezione header */
+.title {
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(253, 187, 64);
+    padding: 40px;
+}
+/* /sezione header */
+
+/* sezione nome burger */
+.name-burger {
+    width: 100%;
+    padding: 30px;
+}
+/* /sezione nome burger */
+
+/* sezione ingredienti */
+.ingredients {
+
+    width: 100%;
+    padding: 40px;
+}
+.box {
+    display: inline-block;
+    width: 40%;
+    height: 5vh;
+}
+.item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 5vh;
+    margin: 10px;
+}
+img {
+   height: 5vh;
+    display: cover;
+}
+/* /sezione ingredienti */
+
+/* sezione discout coupon */
+.discount {
+    padding: 40px;
+}
+/* /sezione discout coupon */
+
+/* sezione bottone calcola prezzo */
+.button {
+    width: 100%;
+    text-align: center;
+}
+/* /sezione bottone calcola prezzo */
+
+/* sezione visualizza prezzo */
+.price {
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(210, 50, 89);
+    padding: 40px;
+    color: white;
+}
+/* /sezione visualizza prezzo */

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Create Your Burger</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="title">
+                <h1>Create Your Burger</h1>
+
+            </div>
+
+        </header>
+        <main>
+            <!-- <section class="name-burger"> -->
+            <form name="myForm" action="" method="post">
+                <section class="name-burger">
+                    <input type="text" name="name" placeholder="Name Your Burger">
+                </section>
+                <section class="ingredients">
+                    <h2>Ingredients</h2>
+                    <div class="box">
+                        <div class="item">
+                            <img src="img/cheese.svg" alt="cheese">
+                            <label for="">Cheese</label>
+                            <input type="checkbox" name="ingredient" id="cheese" class="food" value="5">
+                        </div>
+                        <div class="item">
+                            <img src="img/fried-egg.svg" alt="fried-egg">
+                            <label for="">Fried-egg</label>
+                            <input type="checkbox" name="ingredient" id="fried-egg" class="food" value="3">
+                        </div>
+                        <div class="item">
+                            <img src="img/mustard.svg" alt="mustard">
+                            <label for="">Mustard</label>
+                            <input type="checkbox" name="ingredient" id="mustard" class="food" value="2">
+                        </div>
+                        <div class="item">
+                            <img src="img/tomato.svg" alt="tomato">
+                            <label for="">Tomato</label>
+                            <input type="checkbox" name="ingredient" id="tomato" class="food" value="3">
+                        </div>
+                        <div class="item">
+                            <img src="img/lettuce.svg" alt="lettuce">
+                            <label for="">Lettuce</label>
+                            <input type="checkbox" name="ingredient" id="lettuce" class="food" value="3">
+                        </div>
+                        <div class="item">
+                            <img src="img/ketchup.svg" alt="ketchup">
+                            <label for="">Ketchup</label>
+                            <input type="checkbox" name="ingredient" id="ketchup" class="food" value="3">
+                        </div>
+                    </div>
+                   
+                       
+                    
+                </section>
+
+
+                <section class="discount">
+                    <label>Discount Coupon</label>
+                    <input type="text" name="" id="coupon" value="">
+        
+                </section>
+                <section class="button">
+                    <input type="button" id="btnCalcola" value="Calculate ">
+        
+                </section>
+            </form>
+
+            <section class="price">
+                <h2>Your price</h2>
+                <h2 id="prezzo">$</h2>
+            </section>
+            
+    
+        </main>
+    </div>
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>
