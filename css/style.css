@@ -6,13 +6,13 @@
 /* common */
 body {
     background-color: rgb(255, 244, 226);
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .wrapper {
     width: 50vw;
     height: 100vh;
     background-color: white;
     margin: 0 auto;
-    
 }
 main {
     position: relative;
@@ -20,44 +20,125 @@ main {
     height: 85vh;
 }
 /* /common */
+
 /* sezione header */
 .title {
+    position: relative;
     width: 100%;
     height: 15vh;
-    background-color: rgb(253, 187, 64);
-    padding: 40px;
+    background-color: rgb(253, 187, 64); 
+}
+.title h1 {
+    position: absolute;
+    left: 40px;
+    bottom: 40px;
+    font-size: 50px;
+    text-align: bottom;
+}
+.box-img {
+    position: absolute;
+    width: 15vw;
+    height: 15vw;
+    top: -30px;
+    right: -90px;
+}
+.box-img img {
+    width: 100%;
+    height: 100%;
+    display: cover;
 }
 /* /sezione header */
 
 /* sezione nome burger */
 .name-burger {
     width: 100%;
-    padding: 30px;
+    padding-top: 60px;
+    padding-left: 40px;
+}
+#name {
+    width: 50%;
+    border: none;
+    font-size: 30px;
+}
+#name:focus {
+    background-color: rgb(255, 244, 226);
+    border-radius: 5px;
+    outline: none;
 }
 /* /sezione nome burger */
 
 /* sezione ingredienti */
 .ingredients {
-
     width: 100%;
     padding: 40px;
 }
+.ingredients h2 {
+    font-weight: 400;
+    font-size: 30px;
+}
 .box {
     display: inline-block;
-    width: 40%;
-    height: 5vh;
+    width: 100%;
 }
 .item {
     display: flex;
-    justify-content: space-around;
+    justify-content: left;
     align-items: center;
-    width: 40%;
+    width: 35%;
     height: 5vh;
-    margin: 10px;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-right: 60px;
+}
+.float {
+    float: left;
 }
 img {
    height: 5vh;
     display: cover;
+}         
+.add {
+    color: rgb(210, 50, 89);
+    margin-left: 30px;
+}
+.ingredients input {
+    display: none;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+.ingredients label {
+    margin-left: 10px;
+}
+.item label {
+    position: relative;
+}
+.item span.checkmark {
+    display: inline-block;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: rgb(210, 50, 89);
+    margin-left: 5px;
+}
+.item span.checkmark i {
+    display: none;
+    position: absolute;
+    font-size: 25px;
+    z-index: 99;
+    top: -5px;
+    margin: auto;
+}
+label:hover {
+    cursor: pointer;
+}
+#cheese:checked ~ span.checkmark i,
+#tomato:checked ~ span.checkmark i,
+#fried-egg:checked ~ span.checkmark i,
+#lettuce:checked ~ span.checkmark i,
+#mustard:checked ~ span.checkmark i,
+#ketchup:checked ~ span.checkmark i {
+    display: inline-block;
 }
 /* /sezione ingredienti */
 
@@ -65,12 +146,42 @@ img {
 .discount {
     padding: 40px;
 }
+.coupon {
+    font-size: 20px;
+}
+#coupon {
+    width: 70%;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(255, 244, 226);
+    border-radius: 10px;
+    outline: none;
+    margin-left: 20px;
+    padding: 5px;
+}
+#coupon:focus {
+    background-color: rgb(253, 187, 64);
+    border-radius: 5px;
+    outline: none;
+}
 /* /sezione discout coupon */
 
 /* sezione bottone calcola prezzo */
 .button {
     width: 100%;
     text-align: center;
+}
+.button input {
+    width: 150px;
+    height: 50px;
+    background-color: rgb(253, 187, 64);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.button input:active {
+    background-color: orange;
 }
 /* /sezione bottone calcola prezzo */
 

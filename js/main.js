@@ -11,7 +11,6 @@ btnCalcola.addEventListener('click',
         return false;
         } 
         // ciclo per sommare il prezzo degli ingredienti selezionati
-        
         for (var i = 0; i < listArray.length; i ++) {
             var totale = somma += listArray[i];
             console.log(totale);
@@ -19,10 +18,10 @@ btnCalcola.addEventListener('click',
 
         // controllo discount coupon e calcolo del prezzo 
         var coupon = document.getElementById('coupon').value;
-        // console.log(coupon);
         var arrayCoupon = ["sconto10", "sconto20", "sconto30" ];
         var controlloCoupon = false;
-        // for (var i = 0; i < arrayCoupon.length; i++) {
+
+        for (var i = 0; i < arrayCoupon.length; i++) {
         
             
             if (coupon !== arrayCoupon[i]){
@@ -45,14 +44,15 @@ btnCalcola.addEventListener('click',
                 burgerPrezzo = totale - (totale * 30 / 100);
                 console.log(burgerPrezzo);
             }
-            document.getElementById('prezzo').innerHTML = "$ " + burgerPrezzo.toFixed(2);
-        // }
+            document.getElementById('prezzo').innerHTML = "$ " + burgerPrezzo;
+        }
     }
 )
 
 // sezione Funzioni
+// istruzione di creazione di un array degli ingredienti selezionati dall'utente
 var listArray = [];
-var somma = 0;
+var somma = 50;
 var checkboxses = document.querySelectorAll('.food');
 console.log(checkboxses);
 for(var checkbox of checkboxses) {
